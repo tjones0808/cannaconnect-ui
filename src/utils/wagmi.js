@@ -1,6 +1,6 @@
 import { coinbaseWallet, injected, walletConnect } from 'wagmi/connectors';
 import { createConfig, http } from 'wagmi';
-import { base } from 'wagmi/chains';
+import { base, baseSepolia } from 'wagmi/chains';
 import { CLIENT_CONFIG } from './viem';
 import { CHAINS } from '../config/chains';
 
@@ -41,7 +41,7 @@ export function createWagmiConfig() {
     ssr: true,
     syncConnectedChain: true,
     transports: {
-      [base.id]: http(),
+      [baseSepolia.id]: http(),
     },
     ...CLIENT_CONFIG,
     connectors: [

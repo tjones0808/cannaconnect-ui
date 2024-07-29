@@ -11,9 +11,9 @@ import { CHAINS } from '../config/chains';
 export const isChainSupported = memoize((chainId) => CHAINS.includes(chainId));
 
 export const ChainId = {
-  ETHEREUM: 1,
-  SEPOLIA: 11155111,
-  BASE: 8453,
+  // ETHEREUM: 1,
+  // SEPOLIA: 11155111,
+  // BASE: 8453,
   BASE_SEPOLIA: 84532,
 };
 
